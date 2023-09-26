@@ -1,0 +1,30 @@
+
+class Vehicle{
+  name="";
+  color="";
+  constructor(name, color) {
+   this.name = name;
+   this.color=color;
+
+
+  }
+   getVehicle() {
+    console.log(`${this.name} in ${this.color}`);
+   }
+
+}
+class Bikes extends Vehicle {
+noofwheels = 2;
+model="";
+constructor(name, color,model) {
+  super(name,color);
+  this.model=model;
+
+
+
+}
+
+}
+let bike=new Bikes("Bajaj","black","pulsar");
+console.log(bike);
+bike.getVehicle();
